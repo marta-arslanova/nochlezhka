@@ -69,7 +69,7 @@
   transition: all 0.15s linear;
 }
 .header__event:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   transform: scale(1.05);
 }
 .header__event::before {
@@ -188,7 +188,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
