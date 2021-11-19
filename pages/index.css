@@ -1,20 +1,41 @@
+/* Глобальные стили  */
 @import "../vendor/normalize.css";
 @import "../blocks/root/root.css";
 @import "../vendor/fonts/fonts.css";
 @import "../blocks/page/page.css";
+/* Контейнер */
 @import "../blocks/container/container.css";
+/* Заголовок */
 @import "../blocks/title/title.css";
+/* Кнопки */
 @import "../blocks/button/button.css";
-@import "../blocks/button/_primary/button_primary.css";
+@import "../blocks/button/_color_accent/button_color_accent.css";
+/* header */
+@import "../blocks/header/header.css";
+@import "../blocks/header/__wrapper/header__wrapper.css";
+@import "../blocks/header/__logo-link/header__logo-link.css";
+@import "../blocks/header/__location/header__location.css";
+@import "../blocks/header/__event/header__event.css";
+@import "../blocks/header/__button/header__button.css";
+@import "../blocks/header/__burger/header__burger.css";
+@import "../blocks/header/__burger/_active/header__burger_active.css";
+@import "../blocks/menu/menu.css";
+/* menu */
+@import "../blocks/menu/__list/menu__list.css";
+@import "../blocks/menu/__item/menu__item.css";
+@import "../blocks/menu/__link/menu__link.css";
+/* events */
 @import "../blocks/events/events.css";
 @import "../blocks/events/__wrapper/events__wrapper.css";
+@import "../blocks/events/__list/events__list.css";
+@import "../blocks/events/__item/events__item.css";
 @import "../blocks/events/__button/events__button.css";
 @import "../blocks/events/__arrow/events__arrow.css";
 @import "../blocks/events/__scroll-area/events__scroll-area.css";
 @import "../blocks/events/__main-button/events__main-button.css";
+/* card */
 @import "../blocks/card/card.css";
 @import "../blocks/card/__btn/card__btn.css";
-@import "../blocks/card/__icon/card__icon.css";
 @import "../blocks/card/__link/card__link.css";
 @import "../blocks/card/__content/card__content.css";
 @import "../blocks/card/__wrapper/card__wrapper.css";
@@ -27,82 +48,16 @@
 @import "../blocks/card/__address/card__address.css";
 @import "../blocks/card/__links/card__links.css";
 @import "../blocks/card/__img/card__img.css";
-@import "../blocks/header/header.css";
-@import "../blocks/header/__wrapper/header__wrapper.css";
-@import "../blocks/header/__logo-link/header__logo-link.css";
-@import "../blocks/header/__location/header__location.css";
-@import "../blocks/header/__event/header__event.css";
-@import "../blocks/header/__button/header__button.css";
-@import "../blocks/header/__burger/header__burger.css";
-@import "../blocks/header/__burger/_active/header__burger_active.css";
-@import "../blocks/menu/menu.css";
-@import "../blocks/menu/__list/menu__list.css";
-@import "../blocks/menu/__item/menu__item.css";
-@import "../blocks/menu/__link/menu__link.css";
+/* promo */
 @import "../blocks/promo/promo.css";
 @import "../blocks/promo/__logo/promo__logo.css";
 @import "../blocks/promo/__follow-up/promo__follow-up.css";
 @import "../blocks/promo/__button/promo__button.css";
+/* about */
 @import "../blocks/about/about.css";
 @import "../blocks/about/__title/about__title.css";
 @import "../blocks/about/__wrapper/about__wrapper.css";
 @import "../blocks/about/__text/about__text.css";
 @import "../blocks/about/__button/about__button.css";
-@media screen and (max-width: 700px){
 
-}
-
-/* @keyframes pulse-btn {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
-
-/* 
-.popup {
-  top: 68px;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-}
-
-.popup__active {
-}
-.popup_type_navigation {
-}
-.popup__container {
-}
-.popup__subtitle {
-}
-.popup__button {
-}
-.popup__arrow {
-}
-.popup__menu {
-}
-.popup__list {
-}
-.popup__item {
-}
-.popup__link {
-}
-.popup__footer {
-}
-.popup__title {
-}
-.popup__img {
-}
-.popup__descr {
-}
-.button {
-}
-.button_primary {
-} */
+@media screen and (max-width: 700px){}

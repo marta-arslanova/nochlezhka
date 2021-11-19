@@ -7,6 +7,8 @@
   font-weight: 500;
   font-size: 18px;
   transition: all 0.15s linear;
+  border: none;
+  background: transparent;
 }
 
 .header__location:hover {

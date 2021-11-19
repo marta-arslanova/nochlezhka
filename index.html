@@ -15,7 +15,7 @@
         <a class="header__logo-link" href="#">
           <img class="header__logo" src="img/header/logo__header.svg" alt="Логотип">
         </a>
-        <a class="header__location">Санкт-Петербург</a>
+        <button class="header__location" type="button">Санкт-Петербург</button>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
@@ -31,7 +31,7 @@
         </nav>
         <a class="header__event">хочу пойти</a>
         <button class="header__burger"></button>
-        <button class="header__button button button_primary">поддержать</button>
+        <button class="header__button button button_color_accent" type="button">поддержать</button>
       </div>
     </div>
  </header>
@@ -39,10 +39,10 @@
     <section class="promo">
       <img class="promo__logo" src="img/promo/promo__logo.svg" alt="Главный логотип">
       <p class="promo__follow-up">узнать больше</p>
-      <button class="promo__button"></button>
+      <a class="promo__button" href="#more"></a>
     </section>
     <section class="about">
-        <h1 class="about__title title">просто приятно помогать</h1>
+        <h2 class="about__title title">просто приятно помогать</h2>
         <div class="about__wrapper">
           <p class="about__text">
             Пейте кофе в любимых заведениях, посещайте интересные мероприятия, устраивайте домашние посиделки с друзьями — и помогайте бездомным!
@@ -50,26 +50,36 @@
           <p class="about__text">
             Целую неделю 26 апреля — 2 мая вся выручка будет перечислена в пользу бездомных.
           </p>
-          <button class="about__button button">узнать подробнее</button>
+          <a class="about__button button" href="#more">узнать подробнее</a>
         </div>
     </section>
     <main class="contetnt">
-      <section class="events">
+      <section class="events" id="more">
         <div class="container">
           <div class="events__wrapper">
-            <h2 class="title">гедонизм-фест — это целая неделя, во время которой просто приятно</h2>
-            <a class="events__button button">посетить мастер-класс</a>
-            <a class="events__button button">выпить кофе</a>
-            <a class="events__button button">не выходить из дома</a>
-            <a class="events__button button">сходить на экскурсию</a>
-            <a class="events__button button">побывать в музее</a>
+            <h1 class="title">гедонизм-фест — это целая неделя, во время которой просто приятно</h1>
+            <ul class="events__list">
+              <li class="events__item">
+                <a class="events__button button">посетить мастер-класс</a>
+              </li>
+              <li class="events__item">
+                <a class="events__button button">выпить кофе</a>
+              </li>
+              <li class="events__item">
+                <a class="events__button button">не выходить из дома</a>
+              </li>
+              <li class="events__item">
+                <a class="events__button button">сходить на экскурсию</a>
+              </li>
+              <li class="events__item">
+                <a class="events__button button">побывать в музее</a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="events__scroll-area">
           <article class="card">
-            <a class="card__btn">
-              <div class="card__icon"></div>
-            </a>
+            <button class="card__btn" type="button"></button>
             <a class="card__link" href="#">
               <img class="card__img" src="img/events/lecture.jpg" alt="Обложка">
             </a>
@@ -89,9 +99,7 @@
             </div>
           </article>
           <article class="card">
-            <a class="card__btn">
-              <div class="card__icon"></div>
-            </a>
+            <button class="card__btn" type="button"></button>
             <a class="card__link" href="#">
               <img class="card__img" src="img/events/food_and_drink1.jpg" alt="Обложка">
             </a>
@@ -111,9 +119,7 @@
             </div>
           </article>
           <article class="card">
-            <a class="card__btn">
-              <div class="card__icon"></div>
-            </a>
+            <button class="card__btn" type="button"></button>
             <a class="card__link" href="#">
               <img class="card__img" src="img/events/food_and_drink2.jpg" alt="Обложка">
             </a>
@@ -133,9 +139,7 @@
             </div>
           </article>
           <article class="card">
-            <a class="card__btn">
-              <div class="card__icon"></div>
-            </a>
+            <button class="card__btn" type="button"></button>
             <a class="card__link" href="#">
               <img class="card__img" src="img/events/assembly.jpg" alt="Обложка">
             </a>
@@ -150,9 +154,7 @@
             </div>
           </article>
           <article class="card">
-            <a class="card__btn">
-              <div class="card__icon"></div>
-            </a>
+            <button class="card__btn" type="button"></button>
             <a class="card__link" href="#">
               <img class="card__img" src="img/events/lecture.jpg" alt="Обложка">
             </a>
@@ -172,9 +174,7 @@
             </div>
           </article>
           <article class="card">
-            <a class="card__btn">
-              <div class="card__icon"></div>
-            </a>
+            <button class="card__btn" type="button"></button>
             <a class="card__link" href="#">
               <img class="card__img" src="img/events/food_and_drink1.jpg" alt="Обложка">
             </a>
@@ -195,11 +195,11 @@
           </article>
         </div>  
         <div class="container">
-          <button class="button button_primary events__main-button">смотреть все события</button>
+          <button class="button button_color_accent events__main-button" type="button">смотреть все события</button>
         </div>
       </section>
     </main> 
-<!-- 
+
     <article class="popup popup__active popup_type_navigation">
       <div class="popup__container">
         <h4 class="popup__subtitle">ваш город:</h4>
@@ -226,10 +226,10 @@
             <img class="popup__img" src="/img/header/Logo-text.png" alt="Ночлежка">
           </h2>
           <h3 class="popup__descr">благотворительная организация</h3>
-          <button class="button button_primary">пожертвовать</button>
+          <button class="button button_color_accent">пожертвовать</button>
         </footer>
       </div>
-    </article> -->
+    </article> 
 
     <script src="scripts/index.js"></script>
 </body>
